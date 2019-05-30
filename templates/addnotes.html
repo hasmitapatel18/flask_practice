@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+<title>Notes</title>
+</head>
+
+<body>
+<h1>Notes</h1>
+
+<ul>
+  {% for note in notes %}
+  <li>{{note}}</li>
+  {% endfor %}
+</ul>
+
+<!-- url link referring to the notespage view/route -->
+<form action="{{ url_for('notespage')}}" method="post">
+  <!-- note refers to the user input that is posted -->
+  <input type="text" name="note" placeholder="enter note here">
+  <button>Add note</button>
+</form>
+</body>

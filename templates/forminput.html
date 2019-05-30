@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+<title>Flask Example</title>
+</head>
+
+<body>
+<h1>{{headline}}</h1>
+
+<form action="{{ url_for('formoutput')}}" method="post">
+  <input type="text" name="name" placeholder="enter your name">
+  <button>Submit</button>
+</form>
+</body>
